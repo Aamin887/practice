@@ -1,6 +1,8 @@
 *{
     box-sizing: border-box;
     font-family: serif;
+    padding: 0;
+    margin: 0;
 }
 body{
     background-color: #c1bdba;;
@@ -11,7 +13,7 @@ body{
     width: 650px;
      background-color: aliceblue;
 }
-.bg-blue{
+.bg-blue{ 
     background-color: blue;
 }
 .text-blue{
@@ -86,12 +88,15 @@ input.input{
     font-size: 25px;
     border: 1px solid #cccccc;
     transition: 0.2s ease-in-out;
+    outline: none;
 }
 
 input.input:hover{
+    outline: none;
     border: 1px solid black;
 }
 input.input:focus{
+    outline: none;
     box-shadow: 0 0 red 1px;
     border: 2px solid red !important;
 }
@@ -116,22 +121,24 @@ input.input:focus{
     font-size: 24px;
     border: 0.5px solid #1976D2 !important;
     border-radius: 30px !important;
-    box-shadow:  -3px -3px 12px grey;
+    /* box-shadow:  -3px -3px 12px grey; */
 
 }
 .btn.btn-primary:hover{
     background-color: rgb(12, 84, 156) !important;
     border: 0.5px solid rgb(12, 84, 156) !important;
-
-
 }
 
 .btn:hover{
     background-color: #cccccc;
-    box-shadow: 0 0 10px !important;
+    box-shadow: 0 0 5px !important;
 }
 .btn:focus{
     background-color: gray;
+}
+
+input{
+    outline: none;
 }
 
 /**
